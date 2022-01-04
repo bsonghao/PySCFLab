@@ -1,0 +1,96 @@
+### This is a standard input file for PySCFLab package
+
+Please select your functions: 1
+### Functions: 1. Energy
+###            2. Optimization
+###            3. Frequency
+###            4. Opt + Freq
+----------------------------------------------
+Please select your Basis set: 6
+### Basis: 1. STO-3G
+###        2. 3-21G
+###        3. 6-31G
+###        4. 6-311G
+###        5. cc-pVDZ
+###        6. cc-pVTZ
+###        7. cc-pvQz
+###        8. LanL2DZ
+###        9. LanL2TZ
+----------------------------------------------
+Please select your method: 1
+### Method: 1. Hartree-Fock
+###         2. Kohn-Sham
+###         3. Density functional theory
+###         4. Non-relativistic Hartree-Fock analytical nuclear gradients
+###         5. Non-relativistic ROHF analytical nuclear gradients
+###         6. Non-relativistic unrestricted Hartree-Fock analytical nuclear gradients
+###         7. Non-relativistic restricted Kohn-Sham
+###         8. Non-relativistic ROKS analytical nuclear gradients
+###         9. Non-relativistic Unrestricted Kohn-Sham
+###         10. Non-relativistic Unrestricted Density functional theory
+----------------------------------------------
+Please provide the gerometry for the molecule:
+2 1
+ C                  3.66909100   -0.87485200   -0.70068900
+ H                  3.72262300   -1.25546600   -1.72371400
+ C                  4.92235300   -1.28627600    0.05693000
+ H                  5.82412500   -0.86696100   -0.40699600
+ H                  4.86753200   -0.93208200    1.07867800
+ H                  5.00188500   -2.37549500    0.05804300
+ C                  3.53798800    0.62204500   -0.85024600
+ O                  3.32905500    1.27301600   -1.85301800
+ O                  3.61524100    1.36860700    0.36404800
+ H                  3.42810100    2.29570400    0.13374500
+ N                  2.48315600   -1.47252800   -0.04205700
+ H                  2.31391400   -1.06353900    0.75546200
+ C                  1.20947400   -1.43713600   -0.75083400
+ H                  1.35511600   -1.68538300   -1.80373500
+ C                  0.55270200   -0.06431000   -0.64493600
+ O                 -0.23792500    0.29036500   -1.66324500
+ H                 -0.88877300    1.01568300   -1.43554200
+ O                  0.65516600    0.67880000    0.37673800
+ C                  0.27800100   -2.49781800   -0.13368700
+ H                  0.74057700   -3.47504900   -0.29972800
+ H                  0.24216300   -2.36150700    0.94989300
+ C                 -1.12691600   -2.46389000   -0.71944900
+ H                 -1.07235000   -2.20241000   -1.78612500
+ H                 -1.61047500   -3.44347000   -0.66475500
+ N                 -1.91487700   -1.51790700    0.06286900
+ H                 -1.39823000   -0.65842500    0.18776500
+ C                 -3.24598200   -1.19791900   -0.45878500
+ H                 -3.64958700   -2.06904600   -0.98847800
+ C                 -4.20838100   -1.00049000    0.70172600
+ O                 -5.31451400   -0.49308300    0.62513400
+ O                 -3.67109500   -1.49837100    1.82380200
+ H                 -2.77598900   -1.78964700    1.52516700
+ C                 -3.20935400   -0.04296000   -1.45741900
+ H                 -4.20124300    0.09741500   -1.87723100
+ H                 -2.54959200   -0.29885600   -2.29058600
+ C                 -2.70354700    1.20064100   -0.78173300
+ C                 -3.35693500    2.13348100   -0.11615400
+ H                 -4.39934400    2.23926600    0.11329200
+ C                 -1.17397300    2.62354800   -0.12242000
+ H                 -2.53930600    3.87785000    0.83375700
+ H                 -0.24739200    3.13469800    0.07102200
+ N                 -1.33312600    1.50944900   -0.78318100
+ N                 -2.37518200    3.04824500    0.30323100
+ Zn                 2.06473000    0.45356200    1.64208500
+-----------------------------------------------
+You could modify the following settings: (now they are in default value.)
+
+charge = 0
+spin = 0
+unit = 'Angstrom'
+conv_tol = 1e-12 #converge threshold
+conv_tol_grad = 1e-8 #gradients converge threshold
+direct_scf_tol = 1e-13 #direct SCF cutoff threshold
+init_guess = 'minao' #initial guess method
+level_shift = 0 #Level shift (in AU) for virtual space
+max_cycle = 100 #max number of iterations
+max_memory = 8000 #The maximum size of cache to use (in MB)
+xc = None #XC function type
+atomic_radii = 'BRAGG' #1D array
+becke_scheme = 'BECKE' #weight partition function
+prune = 'NWCHEM' #scheme to reduce number of grids
+radi_method = 'TREUTLER_AHLRICHS' #scheme for radial grids
+radii_adjust = 'TREUTLER' #Function to adjust atomic radii
